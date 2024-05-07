@@ -34,6 +34,7 @@ Subsequently, we can deduce that $|E_A| = |E_B| = \frac{n(n-1)}{2}$
 
 **Bijection Definition**
 For $A$ & $B$ to be isomorphic, we need to find a bijection:
+
 $$
 f: V_A \rightarrow V_B \text{ such that every } a_i \text{ from } a_0 \text{ to } a_n \text{ in } V_A \text{ is mapped to a unique } b_j \text{ from } b_0 \text{ to } b_n \text{ in } V_B.
 $$
