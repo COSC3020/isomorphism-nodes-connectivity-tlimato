@@ -38,9 +38,22 @@ For $A$ & $B$ to be isomorphic, we need to find a bijection:
 $$
 f: V_A \rightarrow V_B \text{ such that every } a_i \text{ from } a_0 \text{ to } a_n \text{ in } V_A \text{ is mapped to a unique } b_j \text{ from } b_0 \text{ to } b_n \text{ in } V_B.
 $$
+Furthermore, we need to make sure that all the edges that makeup $E_A$ are also present in $E_B$ through the bijection.
 
-Furthermore, we need to make sure that all the edges that make up $E_A$ are also present in $E_B$ through the bijection.
+**Bijection Exists**
+For us to fulfill a bijection, function f must exist and be one-to-one and onto. 
+A one-to-one function exists, if there are distinct nodes from $V_A$ that map to distinct nodes that are in $V_B$. This makes sure we can't map multiple nodes from graph $A$ to a distinct node in $B$
 
+Additionally, an onto function exists if its possible to link all of the nodes in $V_B$ back to a given node in $V_A$. 
+Because both graphs $A$ and $B$ share the same number of nodes $n$ it's possible to map nodes from  $V_A$ to a given node in $V_B$ using a one-to-one function.
+Furthermore, because both graphs are fully connected and have the same number of $n$ nodes there will be $n-1$ edges from each node, connecting to the rest of the nodes in the Graph. ( $n-1$ because we aren't worried about total combinations which is used to find the amount of edges in each Graph with $n$ nodes)
+
+Because every node is connected to every other node, each node from $A$ can be mapped to a unique node in $B$. Because the Graphs are fully connected it doesn't matter which node in $A$ you map to $B$ using an onto-function, the edges will be preserved as $f:V_A \rightarrow V_B$ because they are both fully connected.
+
+Therefore, any random mapping of vertices would be a one-to-one and onto function as no more than 1 distinct node in $A$ would map to any given Node in $B$, and any node in $B$ can be traced back to $A$ and as a result a bijection $f: V_A \rightarrow V_B$ such that $(a_x, a_y))
+\in E_1$ iff $(f(a_x),f(a_y)) \in E_2$ must exist.
+
+**Implications of a Bijection Existing**
 Well, Given A & B are complete Graphs, every 2 distinct nodes in either set of nodes form an edge in $E_A$ and $E_B$.
 Thus, for any 2 nodes in $V_A$, $a_x$ and $a_y$, there exists an edge $(a_x, a_y) \in E_A$. 
 The same is true for $E_B$, for any 2 nodes in $V_B$, $b_x$ and $b_y$, there exists an edge $(b_x, b_y) \in E_B$.
@@ -61,5 +74,8 @@ https://mathworld.wolfram.com/CompleteGraph.html
 This is where I refreshed myself on the combination formula briefly touched on in Discrete Structures.
 https://stilleducation.com/combination-formula/
 
+This helped me immensely to build my explanation of bijection f and why it must exist. I was familiar with these terms from the videos covering isomorphism and from last semester in discrete Structure but this visual explanation helped immensely.
+https://www.khanacademy.org/math/linear-algebra/matrix-transformations/inverse-transformations/v/surjective-onto-and-injective-one-to-one-functions
+
 General Disclaimer:
-I use Github copilot to assist in writing code, It's built into my vscode install I use for Professional work and It's helpful in accelerating projects and avoiding syntax issues. I will make this clarification on other assignments as well.
+I use Github copilot to assist in writing code, It's built into my vs code install I use for Professional work and It's helpful in accelerating projects and avoiding syntax issues. I will make this clarification on other assignments as well.
