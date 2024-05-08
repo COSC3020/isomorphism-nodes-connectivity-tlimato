@@ -38,6 +38,7 @@ For $A$ & $B$ to be isomorphic, we need to find a bijection:
 $$
 f: V_A \rightarrow V_B \text{ such that every } a_i \text{ from } a_0 \text{ to } a_n \text{ in } V_A \text{ is mapped to a unique } b_j \text{ from } b_0 \text{ to } b_n \text{ in } V_B.
 $$
+
 Furthermore, we need to make sure that all the edges that makeup $E_A$ are also present in $E_B$ through the bijection.
 
 **Bijection Exists**
